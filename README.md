@@ -8,7 +8,7 @@ A simple, extreme light weight javascript cookie library. Cookify JS is a simple
 Cookify JS can be added to your project by our CDN. To add cookify JS CDN to your project, just add the code below to the footer in your `.html` document
 <br>Note: You should load this script before other scripts
 ```
-<script src='https://cdn.jsdelivr.net/gh/Harry260/cookify.s/app.js' ></script>
+<script src='https://cdn.jsdelivr.net/gh/Harry260/cookify.js/app.js' ></script>
 ```
 #### Using File
 You can download the file `app.js` and link it to your `.html` document using:<br>
