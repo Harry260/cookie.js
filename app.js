@@ -121,20 +121,3 @@ var Cookie = {
     }
 
 }
-
-function save(){
-    var name = document.getElementById('text').value
-    var val = document.getElementById('value').value
-    var ex = document.getElementById('ex').value
-    console.log(Cookie.set(name, val, ex))
-}
-
-function deletec(){
-    var name = document.getElementById('text').value
-    Cookie.delete(name)
-}
-
-function getd(){
-    var name = document.getElementById('text').value
-    console.log(Cookie.get(name))
-}
