@@ -1,0 +1,168 @@
+/*Fonts*/
+
+@import url(//db.onlinewebfonts.com/c/51b7a96dcc46285ab098bcf7f1038a07?family=Liberation+Mono);
+
+@font-face {
+    font-family: inter;
+    src: url(https://github.githubassets.com/static/fonts/inter/Inter-Medium.woff);
+}
+
+@font-face {
+    font-family: reg;
+    src: url(https://github.githubassets.com/static/fonts/inter/Inter-Regular.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headr{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255,255,255,.98);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.headr img{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.headr img:hover{
+    rotate: 360deg;
+    transition: 0.4s;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.note{
+    background-color: lightgoldenrodyellow;
+    padding: 15px;
+    font-family: reg;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content{
+    padding-top: 100px;
+    min-height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section{
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.tag{
+    border: #0366d6 1px solid;
+    padding:4px 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: reg;
+    border-radius: 8px;
+    color: #0366d6;
+}
+
+h1, h4{
+    font-family: inter;
+    margin-bottom: 10px;
+    color: #24292e;
+}
+
+
+h1{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #949a9fd3;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    margin-bottom: 40px;
+}
+
+.code{
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    color: #24292e;
+    font-family: monospace;
+    min-width: 100%;
+    overflow-x: scroll;
+}
+
+.comment{
+    color: gray !important;
+}
+
+.box-code{
+    background-color: #f6f6f6;
+    padding: 0px 4px;
+}
+
+a{
+    color: #0366d6;
+    font-family: inter;
+}
+
+button{
+    background-color: #0365d6b9;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: #0366d6;
+}
+
+
+.footr{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footr span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footr img{
+    width: 15.0px;
+}
+
+ol{
+  margin-bottom: 40px;
+  margin-left: 20px;  
+}
+
+@media (max-width:900px){
+    
+    .content{
+        min-width: 80%;
+    }
+}

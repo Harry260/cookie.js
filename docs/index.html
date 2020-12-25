@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Cookify JS - Documentation - Light Weight JavaScript Cookie Library</title>
+
+        <meta name="title" content="Harry Tom - Portfolio">
+        <meta name="description" content="Light Weight JavaScript Cookie Library.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:url" content="https://harrytom.ml/">
+        <meta property="og:title" content="Cookify JS - Documentation ">
+        <meta property="og:description" content="Light Weight JavaScript Cookie Library">
+
+        <!-- Twitter -->
+        <meta property="twitter:title" content="Cookify JS - Documentation ">
+        <meta property="twitter:description" content="Light Weight JavaScript Cookie Library">
+
+
+        <link rel="icon" href="cookifyJS.png" sizes="16x16" type="image/png">
+
+    </head>
+    <body>
+        <div class="headr">
+            <img src="cookifyJS.png" alt="">
+            <a title="View on Github.com" href="https://github.com/Harry260/cookify.js">
+                <img src="github.png" alt="Github">
+            </a>
+        </div>
+
+        <div class="wrapper">
+            <div class="content">
+
+                <div class="section intro">
+                    <h1>Cookify JS <span class="tag">v1.0.0</span></h1>
+                    <p>
+                        Cookify JS is an super-extreme light-weight javascript Library to manage cookies.
+                        With Cookify, You can manage your cookies easily with our simple <span class="box-code">cdn</span>. 
+                        As cookify is written in simple Vanilla JavaScript, this Library never slows down your webpage.
+                    </p>
+                    <a href="https://github.com/Harry260/cookify.js/fork" >
+                        <button style="padding: 6px 10px;" class="fork-button">Fork on GitHub</button>
+                    </a>
+                   
+                </div>
+
+                <div class="section install-sec">
+                    <h1>Installation</h1>
+                    <p>
+                        Adding this Library to you project is super-easy. You can either use <span class="box-code">cdn</span> by putting the below code to your footer</span>
+                        or <a href="https://drive.google.com/uc?export=download&id=1lKvSxuLnYh8ZnTZ9YNvDU1ahrdG2k8x_">Download</a> the file from the below button and host it yourself
+                        <div class="code">&#60;script src='https://cdn.jsdelivr.net/gh/Harry260/cookify.js/app.js' >&#62;</div>
+                    </p>
+                    <a href="https://drive.google.com/uc?export=download&id=1lKvSxuLnYh8ZnTZ9YNvDU1ahrdG2k8x_">
+                        <button id="get-zip">Download app.js.zip</button>
+                    </a>
+                </div>
+
+                <div class="section usage set-cookie">
+
+                    <h1>Usage</h1>
+                    <p>
+                       With Cookie JS, you can set a cookie with expiry date, delete a cookie, update a cookie, 
+                       clear all cookie and get all cookie as object or a specified cookie. Where, update and 
+                       setting can be done in one method. These functions can be executed in one line!
+                    </p>
+
+                    <ol>
+                       <li><a href="#set-c">Setting Cookie</a></li> <br>
+                       <li><a href="#get-c">Getting Cookie</a></li> <br>
+                       <li><a href="#del-c">Deleting Cooki</a></li> <br>
+                       <li><a href="#clr-c">Clearing Cookies</a></li> <br>
+                       <li><a href="#get-obj-c">Get cookis as object</a></li> 
+                    </ol>
+
+                    <div class="set-cooke" id="set-c">
+                        <h4>Setting cookie</h4>
+                        <p style="margin-bottom: 1px;"><span class="box-code">Cookie.set(COOKIE_NAME, COOKIE_VALUE, COOKIE_EXPIRY)</span></p><br>
+                        <p>
+                            Setting cookie in cookify is easy. <span class="box-code">Cookie.set()</span> method is used to 
+                            set cookie. This method has three parameters - <span class="box-code">name (string)</span>, <span class="box-code">value (string)</span>, <span class="box-code">expiry date (Integer)</span>.
+                            Here name is the key (identifier) for the cookie and value is the data stored. After setting cookie, it will return the stored value as object.
+    
+                            <div class="code">
+                                <span class="comment">//Example of seeting a cookie</span><br><br>
+
+                                var name = ''var cookie_name = 'My_Cookie'; <span class="comment">//Cookie name</span><br><br>
+                                var cookie_value = 'Hello World'; <span class="comment">//Cookie value</span><br><br>
+                                var cookie_ex = 29; <span class="comment">//Cookie expiry date in days</span><br><br>
+                                console.log(Cookie.set(cookie_name, cookie_value, cookie_ex)); <span class="comment"> // Return { name:My_Cookie, value:Hello World  }  </span>                      
+                            </div>
+    
+                        </p>
+                        <div class="note">
+                            Note: If the expiry date is null, it will be automatically set to 365 days
+                        </div>
+                    </div>
+
+                    <div class="get-cookie" id="get-c">
+                        <h4>Getting cookie</h4>
+                        <p style="margin-bottom: 1px;"><span class="box-code">Cookie.get(COOKIE_NAME)</span></p><br>
+                        <p>
+                            Getting cookie with Cookify only require the cookie <span class="box-code" >name (string)</span> for accesing the value. If the cookie name is wrong, it returns <span class="box-code">undefined</span>
+    
+                            <div class="code">
+                                <span class="comment">//Example of geeting a cookie</span><br><br>
+                                var cookie_name = 'My_Cookie';<br><br>
+                                console.log(Cookie.get(cookie_name)); <span class="comment"> // Return Hello_World </span>             
+                            </div>
+    
+                        </p>
+                    </div>
+
+                    <div class="delete-cookie" id="del-c">
+                        <h4>Deleting cookie</h4>
+                        <p style="margin-bottom: 1px;"><span class="box-code">Cookie.delete(COOKIE_NAME)</span></p><br>
+                        <p>
+                            Deleting cookie with Cookify only require the cookie <span class="box-code" >name (string)</span> for deleteing it completely. If the cookie name is wrong, it does nothing.
+    
+                            <div class="code">
+                                <span class="comment">//Example of Deleting a cookie</span><br><br>
+                                var cookie_name = 'My_Cookie';<br><br>
+                                console.log(Cookie.delete(cookie_name));<span class="comment"> //  Return 'success'  </span>                
+                            </div>
+    
+                        </p>
+                    </div>
+
+                    <div class="clear-cookie" id="clr-c">
+                        <h4>Clear cookie</h4>
+                        <p style="margin-bottom: 1px;"><span class="box-code">Cookie.clear()</span></p><br>
+                        <p>
+                            With clear cookie.clear() method, all the cookie saved with cookify can be removed with one line of code. It returns <span class="box-code" >success</span> if the operation was successful. This method requires only one parameter which is the <span class="box-code">name (string)</span> of the cookie.
+    
+                            <div class="code">
+                                <span class="comment">//Example of clearing cookies</span><br><br>
+                                console.log(Cookie.clear()); <span class="comment"> //No parameters Return</span>                
+                            </div>
+    
+                        </p>
+                    </div>
+
+                    <div class="get-obj-cookie" id="get-obj-c">
+                        <h4>Get all cookies as object</h4>
+                        <p style="margin-bottom: 1px;"><span class="box-code">Cookie.obj()</span></p><br>
+                        <p>
+                            The <span class="box-code">Cookie.obj()</span> method can be used for getting all the cookies saved as object.This method dont need any parameters
+                            <div class="code">
+                                <span class="comment">//Example of getting all cookies as object</span><br><br>
+                                console.log(Cookie.obj()); <span class="comment"> //Return (example) { name:'harry', roll-no:10, status:0}</span>                
+                            </div>
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footr">
+            <div class="credits">
+                <span>Cookify JS by <a style="margin-right: 5px;" href="https://harrytom.ml"> Harry Tom</a><a href="https://github.com/harry260">
+                    <img src="github.png" alt=""></a></span>
+            </div>
+        </div>
+    </body>
+</html>
